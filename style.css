@@ -124,3 +124,143 @@ form button:hover {
 .gallery-item img:hover {
     transform: sca
 }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: rgb(22, 137, 191);
+}
+
+
+.main-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.descripcion {
+    max-width: 600px;
+    text-align: center;
+}
+
+
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 450px;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex-basis: calc(33.333% - 10px);
+    margin-bottom: 10px;
+}
+
+.gallery-item img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: sca
+}
+
+@media (max-width:684px) {
+    .main-inicio {
+        background-color: rgb(22, 137, 191);
+    }
+}
+
+@media (max-width:674px) {
+    .main-gallery {
+        display: grid;
+        width: 100%;
+    }  
+}
